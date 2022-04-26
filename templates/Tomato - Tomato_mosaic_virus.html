@@ -7,58 +7,42 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="/static/css/result.css">
     <title>TOMATO LEAF DISEASE PREDICTION</title>
-
     <style>
         * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            font-family: "Josefin Slab";
         }
 
-        .border img {
-            border-radius: 15px;
-            border: 2px solid black;
-        }
-		
     </style>
 </head>
 
-<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
-
-
-
-    <div>
-        <h1 style="text-align:center;font-size:4rem">Predict Tomato Leaf Disease & Get Cure</h1>
-    </div>
-
-   <br>
-   <br>
-
-
-    <div class="container my-2">
+<body>
+    <div class="my-container container my-2">
+        <h1 style="font-size:4rem">Prediction</h1>
         <div class="row mb-5">
-
             <div class="col-sm" style="margin-bottom: 23px;">
-                <span class="border border-primary">
+                <span class="">
                     <img src="{{url_for('static',filename = 'images/Tomato___Tomato_mosaic_virus.JPG' )}}" alt="User Image" style="width:500px;height:500px;">
-                    
-
                 </span>
             </div>
 
             <div class="col-sm">
-
                 <div>
-                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
-                        class="text-center mb-5 content-h1 rounded">
+                    <div class="detail-heading">Disease</div>
+                    <h1 style="padding: 15px; background-color:#6CF4A3; color: black;"
+                        class="text-center mb-5 content-h1">
                         {{pred_output}} </h1>
                 </div>
                 <div class="details">
 					
 					<h4><b> Treatment : </b> </h4>
                     <h6>
+                        Tomatoes that have early blight require immediate attention before the disease takes over the plants. Thoroughly spray the plant (bottoms of leaves also) with Bonide Liquid Copper Fungicide concentrate or Bonide Tomato & Vegetable. Both of these treatments are organic..</br></br>
+                    </h6>    <h6>
 
 					There are no cures for viral diseases such as mosaic once a plant is infected. As a result, every effort should be made to prevent the disease from entering your garden.
 					<br>
